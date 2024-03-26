@@ -1,0 +1,65 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  article{
+    position: relative;
+    border: 3px solid #008000;
+    border-radius: 2rem;
+    width: 300px;
+    height: 140px;
+    font-size: 2rem;
+    text-align: justify;
+    color: #B49E68;
+    padding: 1rem;
+
+    .fas {
+      position: absolute;
+      bottom: 12px;
+      right: 13px;
+      font-size: 4rem;
+      color: #008000;
+      display: none;
+    }
+
+    .fas.isChecked {
+      display: flex;
+    }
+
+    .modal {
+      position: absolute;
+      border-radius: 1.7rem;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    input[type="checkbox"]{
+      display: none;
+    }
+
+    label {
+      span {
+        color: #EA580C;
+        font-weight: 700;
+      }
+
+      strong {
+        color: #B49E68;
+      }
+    }
+  }
+
+  article:hover {
+    cursor: pointer;
+  }
+
+  .checked {
+    background-color: rgb(91, 161, 91);
+    opacity: 0.2;
+  }
+
+}
+
